@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hanyang Wang — MPRI student at Institut Polytechnique de Paris. Research in formal methods, program verification, and AI-assisted theorem proving.">
+  <title>Hanyang Wang</title>
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any">
+  <style>
+    @font-face { font-family:"CMU Sans Serif"; src:url("fonts/cmunss.otf") format("opentype"); font-weight:400; font-style:normal; font-display:swap; }
+    @font-face { font-family:"CMU Sans Serif"; src:url("fonts/cmunsx.otf") format("opentype"); font-weight:700; font-style:normal; font-display:swap; }
+    @font-face { font-family:"CMU Sans Serif"; src:url("fonts/cmunsi.otf") format("opentype"); font-weight:400; font-style:italic; font-display:swap; }
+    @font-face { font-family:"CMU Sans Serif"; src:url("fonts/cmunso.otf") format("opentype"); font-weight:700; font-style:italic; font-display:swap; }
+    :root { color-scheme: light; --ink:#262626; --muted:#666666; --link:#17649a; --rule:#e5e5e5; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:#fff; color:var(--ink); font:16px/1.75 "CMU Sans Serif",sans-serif; }
+    a { color:var(--link); text-decoration:none; text-underline-offset:4px; }
+    a:hover { text-decoration:underline; }
+    a:focus-visible { outline:2px solid var(--link); outline-offset:5px; border-radius:2px; }
+    .skip { position:absolute; left:16px; top:-80px; background:white; padding:8px; }
+    .skip:focus { top:8px; }
+    .page { max-width:1080px; padding:78px 48px 32px; margin:0 auto; display:grid; grid-template-columns:235px minmax(0,1fr); gap:70px; }
+    aside { align-self:start; position:sticky; top:60px; }
+    .avatar { display:block; width:160px; height:160px; border-radius:50%; object-fit:cover; margin:0 0 24px; }
+    h1,h2 { font-family:inherit; color:var(--ink); font-weight:700; }
+    h1 { font-size:31px; line-height:1.2; margin:0 0 8px; letter-spacing:-.7px; }
+    .chinese { font-size:19px; letter-spacing:3px; color:var(--muted); margin:0 0 24px; }
+    .profile-links { display:flex; flex-wrap:wrap; gap:16px; margin-top:10px; font-size:14px; }
+    nav { margin-top:34px; border-top:1px solid var(--rule); padding-top:19px; display:flex; flex-direction:column; gap:6px; font-size:14px; }
+    nav a { color:var(--muted); }
+    nav a:hover { color:var(--link); }
+    section { margin-bottom:36px; scroll-margin-top:28px; }
+    h2 { font-size:25px; line-height:1.3; margin:0 0 17px; }
+    p { margin:0 0 14px; }
+    strong { font-weight:700; }
+    .intro { font-size:16px; }
+    .section-heading { border-bottom:1px solid var(--rule); padding-bottom:11px; }
+    article { margin:0 0 26px; }
+    h3 { font-size:16px; line-height:1.55; margin:0 0 5px; font-weight:700; }
+    .authors { font-size:14px; margin-bottom:3px; }
+    .venue { font-size:14px; margin-bottom:8px; }
+    .paper-links { font-size:13px; margin-top:9px; }
+    .paper-links a { border:1px solid var(--rule); border-radius:3px; padding:3px 10px; display:inline-block; line-height:1.6; }
+    .teaching p,.teaching ul { font-size:14px; }
+    .teaching-list { list-style:none; padding:0; margin:12px 0 0; }
+    .teaching-list li { display:grid; grid-template-columns:105px minmax(0,1fr); gap:16px; margin-bottom:9px; }
+    .teaching-list .term { color:var(--muted); }
+    @media (max-width:480px) { .teaching-list li { grid-template-columns:1fr; gap:0; margin-bottom:14px; } }
+    footer { border-top:1px solid var(--rule); margin-top:40px; padding:17px 0 8px; font-size:12px; color:var(--muted); display:flex; justify-content:space-between; gap:12px; }
+    @media (max-width:800px) { .page { padding:42px 27px 24px; grid-template-columns:1fr; gap:36px; max-width:700px; } aside { position:static; } h1 { font-size:33px; } .chinese { margin-bottom:15px; } nav { flex-direction:row; flex-wrap:wrap; gap:10px 23px; margin-top:24px; padding-top:16px; } section { margin-bottom:32px; } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+    @media print { .page { display:block; padding:0; } aside { position:static; margin-bottom:25px; } nav,.skip,footer { display:none; } article { break-inside:avoid; } body { font-size:12px; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+  <div class="page">
+    <aside aria-label="Profile">
+      <img class="avatar" src="dn.jpg" alt="A plush toy beside yellow flowers" width="160" height="160">
+      <h1>Hanyang Wang</h1>
+      <p class="chinese" lang="zh">王瀚洋</p>
+      <div class="profile-links">
+        <a href="mailto:hanyang.wang@polytechnique.edu">Email</a>
+        <a href="https://github.com/whyseagull">GitHub</a>
+        <a href="https://www.linkedin.com/in/hanyang-wang-a987a3344/">LinkedIn</a>
+      </div>
+      <nav aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+      </nav>
+    </aside>
+    <main>
+      <section id="about" class="intro">
+        <h2>About</h2>
+        <p>I am a master’s student in the <a href="https://mpri-master.ens.fr/doku.php?id=start">Parisian Master of Research in Computer Science (MPRI)</a> at Institut Polytechnique de Paris. Previously, I received my bachelor’s degree from Shanghai Jiao Tong University, where I worked with Prof. <a href="https://sai.sjtu.edu.cn/cn/facultydetails/zzjs/caoqinxiang">Qinxiang Cao</a> on AI-assisted program verification.</p>
+        <p>My research interests are in <strong>formal methods and program verification</strong>, particularly separation logic and the verification of C programs. I am also interested in how AI can assist with large-scale, real-world program verification:)</p>
+      </section>
+      <section id="publications">
+        <h2 class="section-heading">Publications</h2>
+        <article>
+          <h3><a href="https://openreview.net/forum?id=3rvOJyHibr">SL-VC: A Benchmark and Automated Framework for Separation Logic Verification Condition Proving</a></h3>
+          <p class="authors"><strong>Hanyang Wang*</strong>, Xiwei Wu*, and Qinxiang Cao</p>
+          <p class="venue"><em>International Conference on Machine Learning (ICML), 2026</em></p>
+          <div class="paper-links"><a href="https://openreview.net/forum?id=3rvOJyHibr">Paper</a></div>
+        </article>
+      </section>
+      <section id="teaching" class="teaching">
+        <h2 class="section-heading">Teaching</h2>
+        <p><strong>Teaching Assistant</strong>, UM-SJTU Joint Institute</p>
+        <ul class="teaching-list">
+          <li><span class="term">Summer 2026</span><span>ECE4750J · Introduction to Cryptography</span></li>
+          <li><span class="term">Summer 2026</span><span>ECE4010J · Probabilistic Methods in Engineering</span></li>
+          <li><span class="term">Summer 2025</span><span>MATH2030J · Discrete Mathematics</span></li>
+          <li><span class="term">Spring 2025</span><span>MATH2030J · Discrete Mathematics</span></li>
+          <li><span class="term">Summer 2024</span><span>MATH2030J · Discrete Mathematics</span></li>
+          <li><span class="term">Spring 2024</span><span>MATH2140J · Linear Algebra</span></li>
+        </ul>
+      </section>
+      <footer><span>© 2026 Hanyang Wang</span><span>Updated October 2026</span></footer>
+    </main>
+  </div>
+</body>
+</html>
